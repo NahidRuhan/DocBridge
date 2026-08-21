@@ -38,6 +38,8 @@ CREATE TABLE "users" (
     "role" "Role" NOT NULL DEFAULT 'PATIENT',
     "status" "UserStatus" NOT NULL DEFAULT 'ACTIVE',
     "needPasswordChange" BOOLEAN NOT NULL DEFAULT false,
+    "imageUrl" TEXT NOT NULL DEFAULT '',
+    "imagePublicId" TEXT NOT NULL DEFAULT '',
     "isDeleted" BOOLEAN NOT NULL DEFAULT false,
     "deletedAt" TIMESTAMP(3),
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
